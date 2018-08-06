@@ -8,12 +8,11 @@ public class FirstDemo {
    private void study(){
 	  System.out.println(name+"Hello");
    }
-	
-    public static void main(String[] args) {
+   public static void main(String[] args) {
 		FirstDemo demo=new FirstDemo();
 		demo.name="333";
     	demo.study();
-	}
+   }
 }
 
 class FirstDemo01{
