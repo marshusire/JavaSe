@@ -32,7 +32,6 @@ public class StringDemo {
 		 //判断一个字符是否等于常量，一定要用常量和变量进行比较
 		 String str5=null;
 		 if("123".equals(str5))
-		 
 		//判断地址是否为空
 		 if(str5==null)
 			 System.out.println("判断地址引用 是否为空");
@@ -40,11 +39,7 @@ public class StringDemo {
 		 if("".equals(str5)){
 			 System.out.println("判断内容是否为空");
 		 }
-		 
-		 
-		 
-		 
-		System.out.println(str);
+		  System.out.println(str);
 
 	}
 
