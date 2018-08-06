@@ -1,4 +1,4 @@
-git init 初始化一个本地仓库   Git clone
+﻿git init 初始化一个本地仓库   Git clone
 git add 文件名/.  将文件提交到暂存区
 git commit -m "备注"   将暂存区的内容提交到本地仓库
 
@@ -12,6 +12,8 @@ git reset --hard HEAD^^ 上上个版本
 git reset --hard HEAD~5 回到前5个版本位置
 git reset --hard HASH地址前七位 
 
+配置别名
+git config --global alias.缩写 命令
 //如何
 git reset HEAD 文件名  返回上一步操作将暂存区的文件返回到工作区
 git checkout 文件名    将工作区指定的文件 返回的之前的操作
