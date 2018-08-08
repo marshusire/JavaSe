@@ -2,7 +2,9 @@ package day16;
 
 public class StringDemo {
 	/**
-	 * 1.用户名必须是6-16位 可以是字母数字下划线 2.手机号码验证 3.qq号码验证
+	 * 1.用户名必须是6-16位 可以是字母数字下划线 
+	 * 2.手机号码验证 
+	 * 3.qq号码验证
 	 * 4.“蒹葭苍苍,白鹭为霜霜,所谓伊伊人,再水一方”以逗号来分割字符
 	 * 
 	 * 串 
@@ -130,10 +132,7 @@ public class StringDemo {
 				    }
 				   
 			   }
-		   
-		   
 		   }
-		 
 		 
 		 
 		 return str;
@@ -146,7 +145,7 @@ public class StringDemo {
 		System.out.println(regexUser("ddddddddddddd_123A"));
 		System.out.println(regexPhone("1983&113607"));
 		System.out.println(regexQQ("146047566"));
-		System.out.println(replace("蒹葭苍苍,白鹭双双双,所谓一一一一,再水芳芳芳芳", "Java"));
+		System.out.println(replace("深深深庭院深深深深深深几许", "Java"));
 	}
 
 }
