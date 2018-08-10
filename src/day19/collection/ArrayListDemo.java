@@ -1,6 +1,7 @@
 package day19.collection;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Vector;
 
 class Student{
@@ -106,16 +107,51 @@ public class ArrayListDemo {
 				   //第一种直接移除
 				    // list1.remove(student);
 				   //第二种获取下标
-				     list1.remove(i);
-			 //  }
+				    // list1.remove(i);
+			 //    }
 		   }
 		 }  
 		   
 		   
+		   //通过for遍历删除
+		    for (Student student : list1) {
+				//判断内容是否相等
+		    	if(student==null)continue;
+		    	//判断name是否是mars
+		    	if(student.name.equals("mars")){
+		    		//删除当前对象
+		    	//list1.remove(student);
+		    	}
+			}
+		    
+		    //通过迭代器  
+		       //1.获取迭代器对象  迭代器是一个副本
+		       Iterator<Student>it=list1.iterator();
+		      /* //判断是迭代器否还有更多元素
+		       boolean result=it.hasNext();
+		       //取出下一个元素  每调用next一次 就取出一个元素
+		       Student stu1=it.next();
+		       System.out.println("====="+stu1.name);*/
+		       //取出所有的元素
+		        for (;it.hasNext();) {
+				   //取出下个元素
+		        	Student stu1=it.next();
+		        	System.out.println("==========>"+stu1.name);
+		        	//删除元素
+		        	//list1.remove(stu1);
+		        	//迭代器的remove  删除当前指针指向对象
+		        	if(stu1!=null){
+		        	    if(stu1.name.equals("mars"))
+		        		it.remove();
+		        	}
+				}
+		       
 		   //遍历所有成员
 		   for (Student student : list1) {
 			    System.out.println(student.name);
 		   }
+		   
+		   
 		   
 		   
 		   
