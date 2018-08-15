@@ -18,7 +18,7 @@ public class LinkedListDemo {
 	
 	public static void main(String[] args) {
 		//1.初始化一个LinkedList 对象 空列表
-		  LinkedList<String>list=new LinkedList<String>();
+		   LinkedList<String>list=new LinkedList<String>();
         //2.增加数据
 		   list.add("佩琪");
 		   list.add("乔治");
@@ -48,7 +48,6 @@ public class LinkedListDemo {
 		   for (Iterator iterator = list.iterator(); iterator.hasNext();) {
 			   String string = ( String) iterator.next();
 			   System.out.println(string +"  ");
-			   
 		     }
 		   for (String string : list) {
 			
